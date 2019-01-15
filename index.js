@@ -7,7 +7,8 @@ const mongoose = require('mongoose');
 const router = require('./router');
 
 mongoose.connect('mongodb://localhost/auth', {
-  useNewUrlParser: true
+  useNewUrlParser: true,
+  useCreateIndex: true
 });
 
 // App setup
